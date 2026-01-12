@@ -1,0 +1,181 @@
+/* ServiceCard.css */
+
+.service-card {
+  position: relative;
+  background: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Availability */
+.availability-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.availability-badge.available {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.availability-badge.busy {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+/* Avatar */
+.card-avatar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.avatar-circle {
+  width: 56px;
+  height: 56px;
+  background: var(--bg-tertiary);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+}
+
+.verified-badge {
+  margin-left: -10px;
+  background: var(--primary);
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 2px solid white;
+}
+
+/* Info */
+.card-info {
+  margin-top: 8px;
+}
+
+.provider-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.provider-service {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+/* Stats */
+.provider-stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 14px;
+  background: var(--border-color);
+}
+
+/* Skills */
+.skills-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.skill-tag {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--bg-tertiary);
+}
+
+.skill-tag.more {
+  background: var(--primary-light);
+  color: white;
+}
+
+/* Footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.price-value {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.view-profile-btn {
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+/* Badges */
+.card-badges {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Glow */
+.card-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top,
+    rgba(14, 165, 233, 0.15),
+    transparent 70%);
+  pointer-events: none;
+}

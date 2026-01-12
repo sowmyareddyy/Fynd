@@ -1,0 +1,151 @@
+/* ServiceListing.css */
+
+.service-listing {
+  width: 100%;
+  animation: fadeIn 0.4s ease;
+}
+
+/* ---------- Empty State ---------- */
+
+.empty-state {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  box-shadow: var(--shadow-sm);
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.empty-state h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.reset-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.reset-button:hover {
+  background: var(--primary-dark);
+}
+
+/* ---------- Header ---------- */
+
+.listing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.listing-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* ---------- Filters ---------- */
+
+.listing-filters {
+  display: flex;
+  gap: 12px;
+}
+
+.filter-dropdown {
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  font-size: 14px;
+}
+
+.view-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  cursor: pointer;
+}
+
+.toggle-icon {
+  font-size: 16px;
+}
+
+/* ---------- Grid ---------- */
+
+.provider-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* ---------- Load More ---------- */
+
+.load-more-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.load-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.load-icon {
+  display: inline-block;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+  .listing-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .listing-title {
+    font-size: 22px;
+  }
+
+  .listing-filters {
+    width: 100%;
+  }
+
+  .filter-dropdown,
+  .view-toggle {
+    flex: 1;
+  }
+}
